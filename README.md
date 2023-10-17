@@ -1,4 +1,4 @@
-**Ghostscript.Studio** - Ghostscript library User Interface - PDF/PostScript viewer, editor and converter.
+**Ghostscript.Studio** - Ghostscript library User Interface - PDF/PostScript/EPS viewer, editor and converter.
 
 **Ghostscript Processor** - converter
 
