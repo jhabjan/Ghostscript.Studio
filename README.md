@@ -6,10 +6,18 @@ You'll need to install the Ghostscript library independently. The most up-to-dat
 
 **Ghostscript Processor** - converter
 
-![Ghostscript.NET.Display](https://beegoesmoo.co.uk/github/gss-i-1.png)
+<img src="https://beegoesmoo.co.uk/github/gss-i-1.png" width="80%" />
 
 **PostScript Editor**
 
-![Ghostscript.NET.Display](https://beegoesmoo.co.uk/github/gss-i-2.png)
+<img src="https://beegoesmoo.co.uk/github/gss-i-2.png" width="80%" />
 
-![Ghostscript.NET.Display](https://beegoesmoo.co.uk/github/gss-i-3.png)
+<img src="https://beegoesmoo.co.uk/github/gss-i-3.png" width="80%" />
+
+**View PDF and Export PDF Pages as image**
+
+<img src="https://beegoesmoo.co.uk/github/gss-i-4.png" width="80%" />
+
+# License and Copyright
+
+© 2013 - Josip Habjan 
