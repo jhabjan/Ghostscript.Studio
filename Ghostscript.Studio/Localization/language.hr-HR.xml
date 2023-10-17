@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ghostscriptstudio>
+	<!--
+		language.hr-HR.xml
+		
+		This file is part of Ghostscript.Studio application.
+
+		Author: Josip Habjan (habjan@gmail.com, http://www.linkedin.com/in/habjan) 
+		Copyright (c) 2013 Josip Habjan. All rights reserved.
+
+		Permission is hereby granted, free of charge, to any person obtaining
+		a copy of this software and associated documentation files (the
+		"Software"), to deal in the Software without restriction, including
+		without limitation the rights to use, copy, modify, merge, publish,
+		distribute, sublicense, and/or sell copies of the Software, and to
+		permit persons to whom the Software is furnished to do so, subject to
+		the following conditions:
+
+		The above copyright notice and this permission notice shall be
+		included in all copies or substantial portions of the Software.
+
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+		EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+		MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+		NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+		LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+		OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+		WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.	
+	-->
+	<language culture="hr-HR" name="Hrvatski" international_name="Croatian" app_version="1.0.2" author_name="Josip Habjan" author_email="habjan@gmail.com">
+		<menu>
+			<entries>
+				<item id="file" value="&amp;Datoteka" />
+				<item id="edit" value="&amp;Uredi" />
+				<item id="view" value="&amp;Prikaz" />
+				<item id="run" value="&amp;Izvođenje" />
+				<item id="workspace" value="&amp;Radna okolina" />
+				<item id="tools" value="&amp;Alati" />
+				<item id="help" value="&amp;Pomoć" />
+			</entries>
+			<subentries>
+				<item id="file_new" value="&amp;Novo" />
+			</subentries>
+			<commands>
+				<item id="tsb_new_ghostscript_processor" value="Novi &amp;Ghostscript Izvođać" />
+				<item id="tsb_new_postscript_editor" value="Novi &amp;PostScript Editor" />
+				<item id="file_new_ghostscript_processor" value="&amp;Ghostscript Izvođać" />
+				<item id="file_new_postscript_editor" value="&amp;PostScript Editor" />
+				<item id="file_open" value="&amp;Otvori" />
+				<item id="file_save" value="&amp;Spremi" />
+				<item id="file_save_as" value="Spremi &amp;Kao..." />
+				<item id="file_save_all" value="Spremi S&amp;ve" />
+				<item id="file_exit" value="I&amp;zlaz" />
+				<item id="edit_undo" value="Po&amp;ništi Promjene" />
+				<item id="edit_redo" value="Pono&amp;vi Promjene" />
+				<item id="edit_cut" value="Iz&amp;reži" />
+				<item id="edit_copy" value="&amp;Kopiraj" />
+				<item id="edit_paste" value="&amp;Zaljepi" />
+				<item id="edit_select_all" value="&amp;Označi Sve" />
+				<item id="view_first_page" value="Prv&amp;a Stranica" />
+				<item id="view_previous_page" value="&amp;Prethodna Stranica" />
+				<item id="view_next_page" value="&amp;Slijedeća Stranica" />
+				<item id="view_last_page" value="Za&amp;dnja Stranica" />
+				<item id="view_zoom_in" value="Po&amp;većaj" />
+				<item id="view_zoom_out" value="S&amp;manji" />
+				<item id="run_start" value="&amp;Pokreni" />
+				<item id="run_stop" value="&amp;Zaustavi" />
+				<item id="workspace_save_current_page_as_image" value="Spremi &amp;Trenutnu Stranicu kao Sliku" />
+				<item id="workspace_save_multiple_pages_as_images" value="Spremi &amp;Više Stranica kao Slike" />
+				<item id="tools_options" value="&amp;Postavke" />
+				<item id="tools_ghostscript_processor_switches_presets" value="Upravitelj Predefiniranim Ghostscript Processor Komandama" />
+				<item id="tools_ghostscript_processor_postscript_presets" value="Upravitelj Predefiniranim Ghostscript Procesor PostScript Skriptama" />
+				<item id="help_check_for_new_release" value="Provjeri Dostupnost &amp;Nove Inčice" />
+				<item id="help_report_a_bug" value="&amp;Prijavi Grešku" />
+				<item id="help_about" value="&amp;O Programu" />
+			</commands>
+		</menu>
+		<messagebox ok="&amp;U redu" cancel="&amp;Odustani" ignore="&amp;Ignoriraj" retry="&amp;Pokušaj ponovno" abort="&amp;Obustavi" yes="&amp;Da" no="&amp;Ne">
+			<item id="ghostscript_x64_not_found" title="Ghostscript Studio" message="Kako biste koristili ovaj program, morate imati instaliranu 64-bitnu verziju Ghostscript biblioteke na vašem računalu!" />
+			<item id="ghostscript_x32_not_found" title="Ghostscript Studio" message="Kako biste koristili ovaj program, morate imati instaliranu 32-bitnu verziju Ghostscript biblioteke na vašem računalu!" />
+			<item id="menu_not_implemented" title="Interna greška" message="Meni '{0}' nije implementiran (text: '{1}')!" />
+			<item id="changes_made_wanna_save" title="Spremanje" message="Napravljene su izmjene na '{0}', želite li spremiti te izmjene?" />
+			<item id="language_switch_restart" title="Potraban Restart Programa" message="Promjenili ste jezik korisničkog sučelja, molimo vas da ugasite i ponovno pokrenete ovaj program!" />
+			<item id="delete_selected_files_from_list" title="Obriši" message="Jeste li sigurni da želite obrisati označene datoteke iz liste?" />
+			<item id="delete_all_files_from_list" title="Obriši" message="Jeste li sigurni da želite obrisati sve datoteke iz liste?" />
+			<item id="directory_does_not_exist" title="Greška" message="Mapa '{0}' ne postoji!" />
+			<item id="file_does_not_exist" title="Greška" message="Datoteka '{0}' ne postoji!" />
+			<item id="at_least_one_input_file_required" title="Upozorenje" message="Morate dodate barem jednu ulaznu datoteku!" />
+			<item id="output_folder_not_set" title="Upozorenje" message="Morate postaviti izlaznu mapu!" />
+			<item id="filename_format_not_set" title="Upozorenje" message="Morate upisati format izlazne datoteke!" />
+			<item id="workspace_running" title="Upozorenje" message="Jedna od radnih okolina je trenutno u fazi obrade. Molimo vas zaustavite je prije izlaska iz aplikacije!" />
+			<item id="saving_page_to_image_completed" title="Spremanje" message="Završeno!" />
+			<item id="multipagesettings_page_to_smaller_than_from" title="Upozorenje" message="Stranice u rasponu 'Do' ne može biti manje od stranice u rasponu 'Od'!" />
+			<item id="multipagesettings_custom_pages_cannot_be_empty" title="Upozorenje" message="Polje 'Pojedinačne stranice' ne može ostati prazno!" />
+			<item id="multipagesettings_custom_pages_not_valid" title="Upozorenje" message="Vrijednost polja 'Pojedinačne stranice' nije dobra!" />
+			<item id="multipagesettings_output_folder_empty" title="Upozorenje" message="Morate odabrati izlaznu mapu!" />
+			<item id="multipagesettings_output_folder_missing" title="Upozorenje" message="Izlazna mapa ne postoji na disku, molim vas kreirajte je!" />
+			<item id="multipagesettings_output_filename_empty" title="Upozorenje" message="Morate unjeti format imena izlaznih datoteka!" />
+			<item id="multipagesettings_output_filename_missing_page_tag" title="Upozorenje" message="U imenu izlaznih datoteka morate imati barem jednu oznaku '#pagenumber#!" />
+			<item id="multipagesettings_output_filename_remove_extension" title="Upozorenje" message="Molim vas obrišite nastavak datoteke u formatu imena izlazne datoteke. Program će automatski dodati nastavak ovisno o odabranoj vrsti datoteke!" />
+			<item id="presets_name_cannot_be_empty" title="Upozorenje" message="Morate unjeti polje 'Naziv'!" />
+			<item id="presets_name_contains_illegal_characters" title="Upozorenje" message="Polje 'Naziv' sadrži nedozvoljene znakove!" />
+			<item id="presets_name_already_exist" title="Upozorenje" message="Naziv koji ste upisali već postoji!" />
+			<item id="presets_delete_preset" title="Obriši" message="Jeste li sigurni da želite obrisati ovu predefiniciju?" />
+		</messagebox>
+		<form>
+			<item id="global.open" value="Open" />
+			<item id="global.ok" value="&amp;U redu" />
+			<item id="global.cancel" value="&amp;Odustani" />
+
+			<item id="openmode.title" value="Otvori za..." />
+			<item id="openmode.rbViewing" value="Gledanje" />
+			<item id="openmode.rbEditing" value="Editiranje" />
+			<item id="openmode.btnOk" value="&amp;U redu" />
+			<item id="openmode.btnCancel" value="&amp;Odustani" />
+
+			<item id="editor.untitled" value="Bez naslova" />
+			<item id="editor.lblOutputDebug" value="Izlaz - Debug" />
+
+			<item id="processor.untitled" value="Bez naslova" />
+			<item id="processor.dlg.select_files" value="Odaberite jednu ili više datoteka..." />
+			<item id="processor.lblEditor" value="Editor" />
+			<item id="processor.lblInputAndOutputFiles" value="Ulazne i Izlazne datoteke" />
+			<item id="processor.lblOutputDebug" value="Izlaz - Debug" />
+			<item id="processor.lblInputFiles" value="Ulazne datoteke:" />
+			<item id="processor.lblOutputFolder" value="Izlazna mapa:" />
+			<item id="processor.lblFilenameFormat" value="Format imena izlazne datoteke:" />
+			<item id="processor.btnAddInputFile" value="Dodaj ulaznu datoteku" />
+			<item id="processor.btnRemoveInputFile" value="Makni označenu ulaznu datoteku" />
+			<item id="processor.btnClearInputFiles" value="Makni sve datoteke" />
+			<item id="processor.btnBrowseOutputFolder" value="Pronađi izlaznu mapu" />
+			<item id="processor.btnUseSelectedPreset" value="Koristi odabrani predložak" />
+			<item id="processor.btnManagePresets" value="Uredi predloške" />
+			<item id="processor.output.started" value="{0} - Procesor pokrenut" />
+			<item id="processor.output.stopped" value="{0} - Procesor zaustavljen" />
+			<item id="processor.output.finished" value="{0} - Procesor završio" />
+			<item id="processor.lblSwitches" value="Komande:" />
+			<item id="processor.lblPostScriptToExecute" value="(-c) PostScript za izvršiti:" />
+			<item id="processor.btnCreateSwitchesPreset" value="Izradi Predefinirane Komande od Komandi iz Komandnog editora" />
+			<item id="processor.btnSwitchesPresetManager" value="Upravitelj Predefiniranim Ghostscript Processor Komandama" />
+			<item id="processor.btnApplySwitchesPreset" value="Dodaj Predefinirane Komande u Komandni editor" />
+			<item id="processor.btnCreatePostScriptPreset" value="Izradi Predefiniranu PostScript Skriptu iz editora PostScript Skripte" />
+			<item id="processor.btnPostScriptPresetManager" value="Otvori Upravitelj Predefiniranim Ghostscript PostScript Skriptama" />
+			<item id="processor.btnApplyPostScriptPreset" value="Dodaj Predefiniranu PostScript Skriptu u editor PostScript Skripte" />
+
+			<item id="options.title" value="Postavke" />
+			<item id="options.btnOk" value="&amp;U redu" />
+			<item id="options.btnCancel" value="&amp;Odustani" />
+			<item id="options.tabOther" value="Ostalo" />
+			<item id="options.ghostscript.lblGhostscriptUseVersion" value="Koristi verziju:" />
+			<item id="options.other.lblOtherLanguage" value="Jezik:" />
+
+			<item id="options.tabEditor" value="Editor" />
+			<item id="options.editor.chkEditorProgressiveUpdate" value="Progresivno osvježavanje" />
+			<item id="options.editor.lblEditorProgressiveUpdateInterval" value="Interval:" />
+			<item id="options.editor.lblEditorProgressiveUpdateIntervalMilliseconds" value="milisekundi" />
+
+			<item id="options.tabViewer" value="Preglednik" />
+			<item id="options.viewer.chkViewerProgressiveUpdate" value="Progresivno osvježavanje" />
+			<item id="options.viewer.lblViewerProgressiveUpdateInterval" value="Interval:" />
+			<item id="options.viewer.lblViewerProgressiveUpdateIntervalMilliseconds" value="milisekundi" />
+
+			<item id="options.other.chkOptionsShowSupportWindow" value="Kod pokretanja aplikacije prikaži prozor podrške (NAG)" />
+
+			<item id="other.title.savecurrentpageasimage.settings" value="Spremi trenutu stranicu - Postavke slike" />
+			<item id="other.title.savecurrentpageasimage.saveas" value="Spremi kao..." />
+			<item id="other.title.savecurrentpageasimage.progress" value="Spremam trenutnu stranicu..." />
+			<item id="other.message.savingpage" value="Spremam {0} od {1}..." />
+
+			<item id="other.title.savemlutiplepagesasimages.settings" value="Spremanje više stranica - Postavke slika" />
+			<item id="other.title.savemlutiplepagesasimages.progress" value="Spremam više stranica..." />
+
+			<item id="singlepagesettings.lblResolution" value="DPI - Rezolucija" />
+			<item id="singlepagesettings.chkOpenWindowsExplorerWhenDone" value="Otvori lokaciju spremljene datoteke nakon spremanja" />
+
+			<item id="multipagesettings.gbPages" value="Stranice" />
+			<item id="multipagesettings.rbAllPages" value="Sve Stranice" />
+			<item id="multipagesettings.rbPageRange" value="Stranice u Rasponu" />
+			<item id="multipagesettings.lblPageFrom" value="Od:" />
+			<item id="multipagesettings.lblPageTo" value="Do:" />
+			<item id="multipagesettings.rbCustomPages" value="Pojedinačne Stranice" />
+			<item id="multipagesettings.lblCustomPages" value="npr.: 1,2,5,7,8" />
+			<item id="multipagesettings.gbResolution" value="DPI - Rezolucija" />
+			<item id="multipagesettings.gbOutput" value="Izlaz" />
+			<item id="multipagesettings.lblFolder" value="Mapa:" />
+			<item id="multipagesettings.lblFilenameFormat" value="Format datoteke:" />
+			<item id="multipagesettings.filenameformat.page" value="stranica" />
+			<item id="multipagesettings.lblFileType" value="Vrsta datoteke:" />
+			<item id="multipagesettings.chkOpenWindowsExplorerWhenDone" value="Otvori lokaciju spremljenih datoteka nakon spremanja" />
+			
+			<item id="about.title" value="O Programu" />
+			<item id="about.version" value="Verzija: {0}" />
+			<item id="about.lblComponentsUsed" value="Komponente korištene u ovom programu:" />
+			<item id="about.lblTranslations" value="Prijevodi:" />
+			<item id="about.btnClose" value="&amp;Zatvori" />
+
+			<item id="support.title" value="Ghostscript Studio Podrška" />
+			<item id="support.lblSupport" value="Ghostscript Studio je projekt otvorenog koda distribuiran pod Mozilla Public Licencom 2.0. (MPL-2).&#xA;&#xD;&#xA;&#xD;Molim Vas podržite razvoj Ghostscript Studija na način da mi jednostavno pošaljete e-mail te obznanite da ga koristite." />
+			<item id="support.chkDontShowThisAgain" value="Nemoj više prikazivati ovaj prozor" />
+
+			<item id="presets.title.ghostscriptprocessorswitchespresets" value="Upravitelj Predefiniranim Ghostscript Procesor Komandama" />
+			<item id="presets.title.ghostscriptprocessorpostscriptpresets" value="Upravitelj Predefiniranim Ghostscript Procesor PostScript Skriptama" />
+			<item id="presets.title.import" value="Odaberite Predefinicijsku datoteku..." />
+			<item id="presets.title.export" value="Eksportiraj ovu Predefiniciju kao..." />
+
+			<item id="presets.lblName" value="Naziv:" />
+			<item id="presets.lblDescription" value="Opis:" />
+			<item id="presets.btnNew" value="&amp;Novo" />
+			<item id="presets.btnEdit" value="&amp;Izmijeni" />
+			<item id="presets.btnSave" value="&amp;Spremi" />
+			<item id="presets.btnCancel" value="&amp;Odustani" />
+			<item id="presets.btnDelete" value="O&amp;briši" />
+			<item id="presets.btnImport" value="Im&amp;portiraj" />
+			<item id="presets.btnExport" value="&amp;Eksportiraj" />
+			<item id="presets.btnClose" value="&amp;Zatvori" />
+		</form>
+	</language>
+</ghostscriptstudio>

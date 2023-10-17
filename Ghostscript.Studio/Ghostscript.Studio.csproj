@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C637DB2B-7AFD-4743-BA9A-D2F927A248CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ghostscript.Studio</RootNamespace>
+    <AssemblyName>Ghostscript.Studio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>_resources\img\gss.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Artifex.Ghostscript.NET, Version=1.2.3.0, Culture=neutral, PublicKeyToken=f85051de34525b59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Artifex.Ghostscript.NET.1.2.4\lib\net40\Artifex.Ghostscript.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET, Version=2.5.2.0, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>_libs\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.7.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>_libs\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\Command.EventRelated.cs" />
+    <Compile Include="Commands\CommandSource.cs" />
+    <Compile Include="Commands\ToolStripLabelCommandSource.cs" />
+    <Compile Include="Commands\ToolStripButtonCommandSource.cs" />
+    <Compile Include="Commands\ToolStripMenuItemCommandSource.cs" />
+    <Compile Include="Commands\ToolStripTextBoxCommandSource.cs" />
+    <Compile Include="Core\CDATA.cs" />
+    <Compile Include="Core\ComboBoxItem.cs" />
+    <Compile Include="Core\EditableControlBase.cs" />
+    <Compile Include="Core\EditableControlHandler.cs" />
+    <Compile Include="Core\EditableControls\RichTextBoxEditableControl.cs" />
+    <Compile Include="Core\EditableControls\DefaultEditableControl.cs" />
+    <Compile Include="Core\EditableControls\TextBoxEditableControl.cs" />
+    <Compile Include="Core\EditableControls\ScintillaEditableControl.cs" />
+    <Compile Include="Core\IProgressNotificationExecution.cs" />
+    <Compile Include="Helpers\BufferHelper.cs" />
+    <Compile Include="Helpers\DiskHelper.cs" />
+    <Compile Include="Helpers\Crc64.cs" />
+    <Compile Include="Helpers\RegistrationHelper.cs" />
+    <Compile Include="Presets\Preset.cs" />
+    <Compile Include="Presets\PresetFile.cs" />
+    <Compile Include="Environments\SystemEnvironment.cs" />
+    <Compile Include="Environments\WorkspaceEnvironment.cs" />
+    <Compile Include="Helpers\ClipboardHelper.cs" />
+    <Compile Include="Helpers\ControlsHelper.cs" />
+    <Compile Include="Helpers\ScintillaHelper.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
+    <Compile Include="Helpers\IOHelper.cs" />
+    <Compile Include="IO\StreamScanner.cs" />
+    <Compile Include="Managers\CommandManager.cs" />
+    <Compile Include="Helpers\DynamicObject.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="Managers\EnvironmentManager.cs" />
+    <Compile Include="Managers\PresetManager.cs" />
+    <Compile Include="Utilities\GhostscriptViewerToImageUtility.cs" />
+    <Compile Include="Windows\FPresets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FPresets.Designer.cs">
+      <DependentUpon>FPresets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FMultiPageSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FMultiPageSettings.Designer.cs">
+      <DependentUpon>FMultiPageSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FAbout.Designer.cs">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FDockableWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FDockableWindow.Designer.cs">
+      <DependentUpon>FDockableWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Environments\EnvironmentBase.cs" />
+    <Compile Include="Windows\FOpenMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FOpenMode.Designer.cs">
+      <DependentUpon>FOpenMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FOptions.Designer.cs">
+      <DependentUpon>FOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FProgress.Designer.cs">
+      <DependentUpon>FProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FSinglePageSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FSinglePageSettings.Designer.cs">
+      <DependentUpon>FSinglePageSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\FSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FSupport.Designer.cs">
+      <DependentUpon>FSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workspaces\Editor\Debugger\PSToken.cs" />
+    <Compile Include="Workspaces\Editor\Debugger\PSTokenizer.cs" />
+    <Compile Include="Workspaces\Editor\EditorStdIO.cs" />
+    <Compile Include="Workspaces\Editor\FEditorWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workspaces\Editor\FEditorWorkspace.Designer.cs">
+      <DependentUpon>FEditorWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workspaces\FWorkspaceBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workspaces\FWorkspaceBase.Designer.cs">
+      <DependentUpon>FWorkspaceBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workspaces\Processor\FProcessorWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workspaces\Processor\FProcessorWorkspace.Designer.cs">
+      <DependentUpon>FProcessorWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GhostscriptStudio.cs" />
+    <Compile Include="Helpers\DialogsHelper.cs" />
+    <Compile Include="Managers\LocalizationManager.cs" />
+    <Compile Include="Windows\FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lexers\GhostscriptProcessorLexer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workspaces\Processor\ProcessorFile.cs" />
+    <Compile Include="Workspaces\Processor\ThreadedGhostscriptProcessor.cs" />
+    <Compile Include="Workspaces\Viewer\FViewerWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workspaces\Viewer\FViewerWorkspace.Designer.cs">
+      <DependentUpon>FViewerWorkspace.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Windows\FPresets.resx">
+      <DependentUpon>FPresets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FMultiPageSettings.resx">
+      <DependentUpon>FMultiPageSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FAbout.resx">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Windows\FOpenMode.resx">
+      <DependentUpon>FOpenMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FOptions.resx">
+      <DependentUpon>FOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FProgress.resx">
+      <DependentUpon>FProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FSinglePageSettings.resx">
+      <DependentUpon>FSinglePageSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FSupport.resx">
+      <DependentUpon>FSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\Editor\FEditorWorkspace.resx">
+      <DependentUpon>FEditorWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\Processor\FProcessorWorkspace.resx">
+      <DependentUpon>FProcessorWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspaces\Viewer\FViewerWorkspace.resx">
+      <DependentUpon>FViewerWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Presets\Default\PostscriptPresets\Watermark Template.gspp" />
+    <None Include="Presets\Default\SwitchesPresets\PDF To PNG %2824-bit color%29 - 96 DPI.gssp" />
+    <None Include="Presets\Default\SwitchesPresets\PDF To PostScript.gssp" />
+    <None Include="Presets\Default\SwitchesPresets\PDF To Text.gssp" />
+    <None Include="Presets\Default\SwitchesPresets\PostScript To PDF.gssp" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="version-history.txt" />
+    <Content Include="_libs\SciLexer.dll" />
+    <Content Include="_libs\SciLexer64.dll" />
+    <Content Include="_libs\ScintillaNET.dll" />
+    <Content Include="_libs\WeifenLuo.WinFormsUI.Docking.dll" />
+    <Content Include="_resources\about_used_components.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Localization\Help\ghostscript_help.en-US.htm" />
+    <Content Include="Localization\language.hr-HR.xml" />
+    <Content Include="Localization\language.en-US.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_resources\about_main.html" />
+    <Content Include="_resources\about_translations.html" />
+    <Content Include="_resources\gs_switches.xml" />
+    <Content Include="_resources\img\16x16_preset_list.png" />
+    <Content Include="_resources\img\16x16_apply_preset.png" />
+    <Content Include="_resources\img\16x16_directory.png" />
+    <Content Include="_resources\img\16x16_add.png" />
+    <Content Include="_resources\img\16x16_clear.png" />
+    <Content Include="_resources\img\16x16_delete.png" />
+    <Content Include="_resources\img\Ghostscript.Studio.png" />
+    <Content Include="_resources\img\GSN-GSS-icon.png" />
+    <Content Include="_resources\img\gss.ico" />
+    <Content Include="_resources\img\16x16_preset_set.png" />
+    <Content Include="_resources\img\16x16_preset_save.png" />
+    <Content Include="_resources\toolbar\run_stop.png" />
+    <Content Include="_resources\toolbar\view_zoom_out.png" />
+    <Content Include="_resources\toolbar\view_zoom_in.png" />
+    <Content Include="_resources\toolbar\view_last.png" />
+    <Content Include="_resources\toolbar\view_next.png" />
+    <Content Include="_resources\toolbar\view_previous.png" />
+    <Content Include="_resources\toolbar\view_first.png" />
+    <Content Include="_resources\toolbar\run_start.png" />
+    <Content Include="_resources\toolbar\edit_redo.png" />
+    <Content Include="_resources\toolbar\edit_undo.png" />
+    <Content Include="_resources\toolbar\edit_cut.png" />
+    <Content Include="_resources\toolbar\file_save_all.png" />
+    <Content Include="_resources\toolbar\file_save.png" />
+    <Content Include="_resources\toolbar\file_new.png" />
+    <Content Include="_resources\toolbar\file_open.png" />
+    <Content Include="_resources\toolbar\icons.txt" />
+    <Content Include="_resources\toolbar\edit_copy.png" />
+    <Content Include="_resources\toolbar\edit_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)_libs\SciLexer.dll" "$(ProjectDir)$(OutDir)"
+copy "$(ProjectDir)_libs\SciLexer64.dll" "$(ProjectDir)$(OutDir)"
+mkdir $(ProjectDir)$(OutDir)Localization\
+mkdir $(ProjectDir)$(OutDir)Localization\Help
+copy "$(ProjectDir)Localization\*" "$(ProjectDir)$(OutDir)Localization\"
+copy "$(ProjectDir)Localization\Help\*" "$(ProjectDir)$(OutDir)Localization\Help\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

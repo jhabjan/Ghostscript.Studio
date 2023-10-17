@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GhostscriptStudioPreset>
+  <Type>GhostscriptProcessorSwitches</Type>
+  <Name><![CDATA[PDF To PNG (24-bit color) - 96 DPI]]></Name>
+  <Description><![CDATA[]]></Description>
+  <Content><![CDATA[! >> interaction-related parameters
+-dSAFER			! disables the deletefile and renamefile operators, and the ability to open piped commands (%pipe%cmd) at all
+-dBATCH			! keep gs out from going into interactive loop reading
+-dNOPAUSE		! disables the prompt and pause at the end of each page
+-dNOPROMPT		! disables the prompt printed by Ghostscript when it expects interactive input, as well as the end-of-page prompt (-dNOPAGEPROMPT)
+
+! >> rendering parameters
+-dTextAlphaBits = 4	! text subsample antialiasing
+-dGraphicsAlphaBits = 4	! graphics subsample antialiasing
+
+! >> device selection parameters
+-sDEVICE = png16m	! 24-bit color Portable Network Graphics (PNG)
+
+! >> output resolution
+-r96x96
+]]></Content>
+</GhostscriptStudioPreset>

@@ -1,0 +1,70 @@
+﻿//
+// version-history.cs
+// This file is part of Ghostscript Studio application
+//
+// Development files: https://ghostscriptstudio.codeplex.com/
+//
+// License: MPL-2.0 https://ghostscriptnet.codeplex.com/license
+//
+// Author:
+//   Josip Habjan (habjan@gmail.com, http://www.linkedin.com/in/habjan) 
+//
+// Copyright (c) 2013 - 2023 by Josip Habjan 
+
+HISTORY of the Ghostscript Studio application
+
+1.0.5.         2023-10-17
+-------------------------
+- upgraded to the latest Artifex.Ghostscript.NET
+
+1.0.4.         2014-07-31
+-------------------------
+- fixed problem with applying PDF CropBox value.
+- fixed problem with the PDF page orientation.
+- fixed older versions incompatibility problem with '-dMaxBitmap=1g' switch bugfix
+  which in some cases turns on text antialiasing for Ghostscript 9.14.
+- fixed incompatibility problem with 'gsapi_set_arg_encoding' function in Ghostscript
+  releases prior to 9.10. (this function was introduced in 9.10 release).
+- fixed problem with the PDF invisible layers (the optional content groups which will 
+  be left unmarked if process_trailer_attrs is not executed).
+- fixed text rasterization problem for some pdf's, it seems that the 'pdfopen begin' 
+  did not initialize everything required to render pdf properly so we replaced it with
+  the 'runpdfopen' method which corrects everything (problem reported by "xatabhk").
+- fixed handling files without the extension in GhostscriptViewer and Rasterizer.
+- fixed problem with checking for pdf file header signature in pdf files that has 
+  extra bytes at the beginning of the file before the actual signature.
+
+
+1.0.3.         2014-04-05
+-------------------------
+- fixed problem with displaying PDF's when MediaBox has negative llx or lly values.
+- fixed problem with empty %%BoundingBox value when handling PostScript files.
+- fixed problem with rasterizing some EPS files created with Adobe Illustrator.
+- fixed problem with application crash on Server 2012 R2 that has large amount of memory.
+- fixed problem with default cropping to the BoundingBox for the EPS file format.
+- fixed problem with the paths that contains diacritics.
+
+1.0.2.         2013-10-07
+-------------------------
+- added custom -c switch for executing PostScript from the Ghostscript Processor workspace.
+- implemented program startup parameters handling for openning files from windows explorer.
+- added support for EPS files in the Ghsotscript Viewer workspace.
+- added options for setting progressive update on/off along with desired update interval.
+- fixed edit (undo, redo, cut, copy, paste) actions handling across multiple fields.
+- added Switches and PostScript Presets to the Ghostscript Processor workspace
+- added ability to save any View page(s) as Image(s)
+
+1.0.1.         2013-09-21
+-------------------------
+- properly handled all workspace closing and application exit calls with user notification.
+- fixed 'Save' and 'Save As..' menu & toolbar state changes.
+- ghostscript processor output window now automatically clears each processing cycle.
+- handled 'Check For New Release' and 'Report a Bug' commands.
+
+
+1.0.0.         2013-09-19
+-------------------------
+- initial release
+- Ghostscript Processor Workspace
+- PostScript Editor and Viewer Workspace
+- PDF Viewer workspace

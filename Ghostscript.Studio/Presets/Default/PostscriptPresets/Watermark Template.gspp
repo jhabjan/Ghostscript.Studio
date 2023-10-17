@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GhostscriptStudioPreset>
+  <Type>GhostscriptProcessorPostScript</Type>
+  <Name><![CDATA[Watermark Template]]></Name>
+  <Description><![CDATA[]]></Description>
+  <Content><![CDATA[/watermarkText { (WATERMARK TEXT) } def
+/watermarkFont { /Helvetica-Bold 72 selectfont } def
+/watermarkColor { .75 setgray } def
+/watermarkAngle { 45 } def
+
+/pageWidth { currentpagedevice /PageSize get 0 get } def
+/pageHeight { currentpagedevice /PageSize get 1 get } def
+			
+<<
+	/EndPage {
+		2 eq { pop false } 
+		{
+			gsave
+			watermarkFont
+			watermarkColor
+			pageWidth .5 mul pageHeight .5 mul translate
+			0 0 moveto
+			watermarkText false charpath flattenpath pathbbox
+			4 2 roll pop pop
+			0 0 moveto
+			watermarkAngle rotate
+			-.5 mul exch -.5 mul exch
+			rmoveto
+			watermarkText show
+			grestore 
+			true 
+		} ifelse
+	} bind
+>> setpagedevice]]></Content>
+</GhostscriptStudioPreset>

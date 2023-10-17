@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ghostscriptstudio>
+	<!--
+		language.en-US.xml
+		
+		This file is part of Ghostscript.Studio application.
+
+		Author: Josip Habjan (habjan@gmail.com, http://www.linkedin.com/in/habjan) 
+		Copyright (c) 2013 Josip Habjan. All rights reserved.
+
+		Permission is hereby granted, free of charge, to any person obtaining
+		a copy of this software and associated documentation files (the
+		"Software"), to deal in the Software without restriction, including
+		without limitation the rights to use, copy, modify, merge, publish,
+		distribute, sublicense, and/or sell copies of the Software, and to
+		permit persons to whom the Software is furnished to do so, subject to
+		the following conditions:
+
+		The above copyright notice and this permission notice shall be
+		included in all copies or substantial portions of the Software.
+
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+		EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+		MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+		NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+		LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+		OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+		WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.	
+	-->
+	<language culture="en-US" name="English (US)" international_name="English" app_version="1.0.2" author_name="Josip Habjan" author_email="habjan@gmail.com">
+		<menu>
+			<entries>
+				<item id="file" value="&amp;File" />
+				<item id="edit" value="&amp;Edit" />
+				<item id="view" value="&amp;View" />
+				<item id="run" value="&amp;Run" />
+				<item id="workspace" value="&amp;Workspace" />
+				<item id="tools" value="&amp;Tools" />
+				<item id="help" value="&amp;Help" />
+			</entries>
+			<subentries>
+				<item id="file_new" value="&amp;New" />
+			</subentries>
+			<commands>
+				<item id="tsb_new_ghostscript_processor" value="New &amp;Ghostscript Processor" />
+				<item id="tsb_new_postscript_editor" value="New &amp;Postscript Editor" />
+				<item id="file_new_ghostscript_processor" value="&amp;Ghostscript Processor" />
+				<item id="file_new_postscript_editor" value="&amp;Postscript Editor" />
+				<item id="file_open" value="&amp;Open" />
+				<item id="file_save" value="&amp;Save" />
+				<item id="file_save_as" value="Save &amp;As..." />
+				<item id="file_save_all" value="Save A&amp;ll" />
+				<item id="file_exit" value="E&amp;xit" />
+				<item id="edit_undo" value="&amp;Undo" />
+				<item id="edit_redo" value="&amp;Redo" />
+				<item id="edit_cut" value="&amp;Cut" />
+				<item id="edit_copy" value="C&amp;opy" />
+				<item id="edit_paste" value="&amp;Paste" />
+				<item id="edit_select_all" value="&amp;Select All" />
+				<item id="view_first_page" value="&amp;First Page" />
+				<item id="view_previous_page" value="&amp;Previous Page" />
+				<item id="view_next_page" value="&amp;Next Page" />
+				<item id="view_last_page" value="&amp;Last Page" />
+				<item id="view_zoom_in" value="Zoom &amp;In" />
+				<item id="view_zoom_out" value="Zoom &amp;Out" />
+				<item id="run_start" value="&amp;Start" />
+				<item id="run_stop" value="St&amp;op" />
+				<item id="workspace_save_current_page_as_image" value="Save &amp;Current Page as Image" />
+				<item id="workspace_save_multiple_pages_as_images" value="Save &amp;Multiple Pages as Image" />
+				<item id="tools_options" value="&amp;Options" />
+				<item id="tools_ghostscript_processor_switches_presets" value="Ghostscript Processor Switches Presets Manager" />
+				<item id="tools_ghostscript_processor_postscript_presets" value="Ghostscript Processor PostScript Presets Manager" />
+				<item id="help_check_for_new_release" value="&amp;Check for New Release" />
+				<item id="help_report_a_bug" value="&amp;Report a Bug" />
+				<item id="help_about" value="&amp;About" />
+			</commands>
+		</menu>
+		<messagebox ok="&amp;Ok" cancel="&amp;Cancel" ignore="&amp;Ignore" retry="&amp;Retry" abort="Abort" yes="&amp;Yes" no="&amp;No">
+			<item id="ghostscript_x64_not_found" title="Ghostscript Studio" message="To use this application you need to have 64-bit version of the Ghostscript library installed on the machine!" />
+			<item id="ghostscript_x32_not_found" title="Ghostscript Studio" message="To use this application you need to have 32-bit version of the Ghostscript library installed on the machine!" />
+			<item id="menu_not_implemented" title="Internal error" message="Menu '{0}' is not implemented (text: '{1}')!" />
+			<item id="changes_made_wanna_save" title="Save" message="Changes are made in '{0}', do you want to save the changes?" />
+			<item id="language_switch_restart" title="Application Restart Required" message="You changed application user interface language, please restart the application to take effect." />
+			<item id="delete_selected_files_from_list" title="Delete" message="Are you sure you want to delete selected files from the list?" />
+			<item id="delete_all_files_from_list" title="Delete" message="Are you sure you want to delete all files from the list?" />
+			<item id="directory_does_not_exist" title="Error" message="The directory '{0}' doesn't exist!" />
+			<item id="file_does_not_exist" title="Error" message="The file '{0}' doesn't exist!" />
+			<item id="at_least_one_input_file_required" title="Warning" message="You need to add at least one input file!" />
+			<item id="output_folder_not_set" title="Warning" message="You need to set the output folder!" />
+			<item id="filename_format_not_set" title="Warning" message="You need to enter the filename!" />
+			<item id="workspace_running" title="Warning" message="You have workspace opened that is currently running. Please stop it before exiting application!" />
+			<item id="saving_page_to_image_completed" title="Saving" message="Completed!" />
+			<item id="multipagesettings_page_to_smaller_than_from" title="Warning" message="Page range 'To' cannot be smaller than page range 'From'!" />
+			<item id="multipagesettings_custom_pages_cannot_be_empty" title="Warning" message="Custom Pages field cannot be empty!" />
+			<item id="multipagesettings_custom_pages_not_valid" title="Warning" message="Custom Pages value is not valid!" />
+			<item id="multipagesettings_output_folder_empty" title="Warning" message="You need to specify output folder!" />
+			<item id="multipagesettings_output_folder_missing" title="Warning" message="Output folder doesn't exist on the disk, please create it!" />
+			<item id="multipagesettings_output_filename_empty" title="Warning" message="You need to specifi output filename format!" />
+			<item id="multipagesettings_output_filename_missing_page_tag" title="Warning" message="You need to have at least one '#pagenumber# tag in your output filename format!" />
+			<item id="multipagesettings_output_filename_remove_extension" title="Warning" message="Please remove the extension from the output Filename format, extension will be automatically applyed based on File type field!" />
+			<item id="presets_name_cannot_be_empty" title="Warning" message="Field 'Name' cannot be empty!" />
+			<item id="presets_name_contains_illegal_characters" title="Warning" message="There are illegal characters in 'Name' field!" />
+			<item id="presets_name_already_exist" title="Upozorenje" message="Name you entered already exist!" />
+			<item id="presets_delete_preset" title="Delete" message="Are you sure you want to delete this preset?" />
+		</messagebox>
+		<form>
+			<item id="global.open" value="Open" />
+			<item id="global.ok" value="&amp;Ok" />
+			<item id="global.cancel" value="&amp;Cancel" />
+
+			<item id="openmode.title" value="Open for..." />
+			<item id="openmode.rbViewing" value="Viewing only" />
+			<item id="openmode.rbEditing" value="Editing" />
+			<item id="openmode.btnOk" value="&amp;Ok" />
+			<item id="openmode.btnCancel" value="&amp;Cancel" />
+
+			<item id="editor.untitled" value="Untitled" />
+			<item id="editor.lblOutputDebug" value="Output - Debug" />
+
+			<item id="processor.untitled" value="Untitled" />
+			<item id="processor.dlg.select_files" value="Select one or more files..." />
+			<item id="processor.lblEditor" value="Editor" />
+			<item id="processor.lblInputAndOutputFiles" value="Input and Output files" />
+			<item id="processor.lblOutputDebug" value="Output - Debug" />
+			<item id="processor.lblInputFiles" value="Input files:" />
+			<item id="processor.lblOutputFolder" value="Output folder:" />
+			<item id="processor.lblFilenameFormat" value="Output filename: (use %d for page number)" />
+			<item id="processor.btnAddInputFile" value="Add input file" />
+			<item id="processor.btnRemoveInputFile" value="Remove selected input file" />
+			<item id="processor.btnClearInputFiles" value="Remove all input files" />
+			<item id="processor.btnBrowseOutputFolder" value="Browse for output folder" />
+			<item id="processor.btnUseSelectedPreset" value="Use selected preset" />
+			<item id="processor.btnManagePresets" value="Manage presets" />
+			<item id="processor.output.started" value="{0} - Processor started" />
+			<item id="processor.output.stopped" value="{0} - Processor stopped" />
+			<item id="processor.output.finished" value="{0} - Processor finished" />
+			<item id="processor.lblSwitches" value="Switches:" />
+			<item id="processor.lblPostScriptToExecute" value="(-c) PostScript to execute:" />
+			<item id="processor.btnCreateSwitchesPreset" value="Create Switches Preset from the Switches below" />
+			<item id="processor.btnSwitchesPresetManager" value="Open Switches Preset Manager" />
+			<item id="processor.btnApplySwitchesPreset" value="Append Selected Preset to the Switches editor" />
+			<item id="processor.btnCreatePostScriptPreset" value="Create PostScript Preset from the PostScript below" />
+			<item id="processor.btnPostScriptPresetManager" value="Open Postscript Switches Manager" />
+			<item id="processor.btnApplyPostScriptPreset" value="Append Selected Preset to the PostScript editor" />
+
+			<item id="options.title" value="Options" />
+			<item id="options.btnOk" value="&amp;Ok" />
+			<item id="options.btnCancel" value="&amp;Cancel" />
+			<item id="options.tabOther" value="Other" />
+			<item id="options.ghostscript.lblGhostscriptUseVersion" value="Use version:" />
+			<item id="options.other.lblOtherLanguage" value="Language:" />
+			
+			<item id="options.tabEditor" value="Editor" />
+			<item id="options.editor.chkEditorProgressiveUpdate" value="Progressive update" />
+			<item id="options.editor.lblEditorProgressiveUpdateInterval" value="Interval:" />
+			<item id="options.editor.lblEditorProgressiveUpdateIntervalMilliseconds" value="milliseconds" />
+
+			<item id="options.tabViewer" value="Viewer" />
+			<item id="options.viewer.chkViewerProgressiveUpdate" value="Progressive update" />
+			<item id="options.viewer.lblViewerProgressiveUpdateInterval" value="Interval:" />
+			<item id="options.viewer.lblViewerProgressiveUpdateIntervalMilliseconds" value="milliseconds" />
+
+			<item id="options.other.chkOptionsShowSupportWindow" value="Show support window (NAG) when application starts" />
+
+			<item id="other.title.savecurrentpageasimage.settings" value="Save current page - Output image settings" />
+			<item id="other.title.savecurrentpageasimage.saveas" value="Save as..." />
+			<item id="other.title.savecurrentpageasimage.progress" value="Saving current page..." />
+			<item id="other.message.savingpage" value="Saving {0} of {1}..." />
+
+			<item id="other.title.savemlutiplepagesasimages.settings" value="Save multiple pages - Output images settings" />
+			<item id="other.title.savemlutiplepagesasimages.progress" value="Saving multiple pages..." />
+			
+			<item id="singlepagesettings.lblResolution" value="DPI - Resolution" />
+			<item id="singlepagesettings.chkOpenWindowsExplorerWhenDone" value="Open saved file location when done" />
+
+			<item id="multipagesettings.gbPages" value="Pages" />
+			<item id="multipagesettings.rbAllPages" value="All Pages" />
+			<item id="multipagesettings.rbPageRange" value="Page Range" />
+			<item id="multipagesettings.lblPageFrom" value="From:" />
+			<item id="multipagesettings.lblPageTo" value="To:" />
+			<item id="multipagesettings.rbCustomPages" value="Custom Pages" />
+			<item id="multipagesettings.lblCustomPages" value="e.g.: 1,2,5,7,8" />
+			<item id="multipagesettings.gbResolution" value="DPI - Resolution" />
+			<item id="multipagesettings.gbOutput" value="Output" />
+			<item id="multipagesettings.lblFolder" value="Folder:" />
+			<item id="multipagesettings.lblFilenameFormat" value="Filename format:" />
+			<item id="multipagesettings.filenameformat.page" value="page" />
+			<item id="multipagesettings.lblFileType" value="File type:" />
+			<item id="multipagesettings.chkOpenWindowsExplorerWhenDone" value="Open saved file location when done" />
+			
+			<item id="about.title" value="About" />
+			<item id="about.version" value="Version: {0}" />
+			<item id="about.lblComponentsUsed" value="Components used in this application:" />
+			<item id="about.lblTranslations" value="Translations:" />
+			<item id="about.btnClose" value="&amp;Close" />
+
+			<item id="support.title" value="Ghostscript Studio Support" />
+			<item id="support.lblSupport" value="Ghostscript Studio is an open source project released under Mozilla Public License 2.0. (MPL-2).&#xA;&#xD;&#xA;&#xD;Please support the development of Ghostscript Studio simply by sending me an e-mail and letting me know you use it." />
+			<item id="support.chkDontShowThisAgain" value="Don't show this window again" />
+
+			<item id="presets.title.ghostscriptprocessorswitchespresets" value="Ghostscript Processor Switches Presets Manager" />
+			<item id="presets.title.ghostscriptprocessorpostscriptpresets" value="Ghostscript Processor PostScript Presets Manager" />
+			<item id="presets.title.import" value="Select Preset file..." />
+			<item id="presets.title.export" value="Export Preset to..." />
+
+			<item id="presets.lblName" value="Name:" />
+			<item id="presets.lblDescription" value="Description:" />
+			<item id="presets.btnNew" value="&amp;New Preset" />
+			<item id="presets.btnEdit" value="&amp;Edit Preset" />
+			<item id="presets.btnSave" value="&amp;Save Preset" />
+			<item id="presets.btnCancel" value="&amp;Cancel Preset" />
+			<item id="presets.btnDelete" value="&amp;Delete Preset" />
+			<item id="presets.btnImport" value="&amp;Import Preset" />
+			<item id="presets.btnExport" value="E&amp;xport Preset" />
+			<item id="presets.btnClose" value="&amp;Close" />
+		</form>
+	</language>
+</ghostscriptstudio>

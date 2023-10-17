@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<switches>
+	<switch type="OnOff" category="INTERACTION">
+		<name>-dSAFER</name>
+	</switch>
+
+	<switch type="OnOff" category="INTERACTION">
+		<name>-dNOPAUSE</name>
+	</switch>
+
+	<switch type="OnOff" category="INTERACTION">
+		<name>-dNOPROMPT</name>
+	</switch>
+
+	<switch type="OnOff" category="OTHER">
+		<name>-dBATCH</name>
+	</switch>
+
+	<switch type="Folder(;)" category="FONT_RELATED">
+		<name>-sFONTPATH</name>
+	</switch>
+
+	<switch type="Integer(1-N)" category="PDF">
+		<name>-dFirstPage</name>
+	</switch>
+
+	<switch type="Integer(1-N)" category="PDF">
+		<name>-dLastPage</name>
+	</switch>
+
+	<switch type="Integer(1-N)" category="PDF">
+		<name>-sDEVICE</name>
+	</switch>
+</switches>

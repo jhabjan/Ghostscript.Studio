@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GhostscriptStudioPreset>
+  <Type>GhostscriptProcessorSwitches</Type>
+  <Name><![CDATA[PDF To PostScript]]></Name>
+  <Description><![CDATA[]]></Description>
+  <Content><![CDATA[! >> interaction-related parameters
+-dBATCH			! keep gs out from going into interactive loop reading
+-dNOPAUSE		! disables the prompt and pause at the end of each page
+
+! >> device selection parameters
+-sDEVICE = ps2write	! pdf to postscript device
+]]></Content>
+</GhostscriptStudioPreset>
